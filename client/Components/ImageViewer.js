@@ -3,10 +3,10 @@ import axios from 'axios';
 import Image from './Image';
 
 class ImageViewer extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
-      currentProduct: 2,
+      currentProduct: 1,
       images: [],
       currentImage: ''
     }

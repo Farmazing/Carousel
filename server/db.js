@@ -34,22 +34,17 @@ const products = mongoose.model('products', productsSchema);
 // })
 
 const getCategory = (product, callback) => {
-  // let categoryID;
-  // products.find({'id': product}, (err, res) => {
-  //   if (err) {
-  //     console.log(err)
-  //   } else {
-  //     categoryID = res;
-  //   }
-  // })
-  // console.log(id);
-  products.find({category_id: 1}, (err, res) => {
-    if (err) {
-      callback(err, null);
-    } else {
-      callback(null, res);
-    }
-  })
+  products.find({'id': product})
+    .then((res) => {
+      let categoryID = res[0].category_id;
+      products.find({category_id: categoryID}, (err, res) => {
+        if (err) {
+          callback(err, null);
+        } else {
+          callback(null, res);
+        }
+      })
+    })
 }
 
 const getImages = (product, callback) => {

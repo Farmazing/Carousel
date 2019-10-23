@@ -40,7 +40,7 @@ let data = [{
   name: "Sultry Bib Apron",
   rating: 0,
   price: 19.98,
-  prime: false,
+  prime: true,
   category_id: 1
 },
 {
@@ -67,7 +67,7 @@ let data = [{
   name: "Little Amish Sun Hat",
   rating: 0,
   price: 13.99,
-  prime: false,
+  prime: true,
   category_id: 1
 },
 {
@@ -76,7 +76,7 @@ let data = [{
   name: "Child's Amish Dress",
   rating: 0,
   price: 21.99,
-  prime: false,
+  prime: true,
   category_id: 1
 },
 {
@@ -85,7 +85,7 @@ let data = [{
   name: "Forum Novelties Oversized Bonnet",
   rating: 0,
   price: 7.98,
-  prime: false,
+  prime: true,
   category_id: 1
 },
 {
@@ -148,7 +148,7 @@ let data = [{
   name: "Striped Suspenders",
   rating: 0,
   price: 16.98,
-  prime: false,
+  prime: true,
   category_id: 1
 },
 {
@@ -247,7 +247,7 @@ let data = [{
   name: "Amish Wedding Foods - Apple Butter",
   rating: 0,
   price: 18.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -256,7 +256,7 @@ let data = [{
   name: "Amish Community Cookbook",
   rating: 0,
   price: 16.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -274,7 +274,7 @@ let data = [{
   name: "Amish Country Popcorn",
   rating: 0,
   price: 14.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -283,7 +283,7 @@ let data = [{
   name: "Amish Wedding Foods - Seedless Rasberry",
   rating: 0,
   price: 19.49,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -292,7 +292,7 @@ let data = [{
   name: "Amish Wedding Foods - Bread n Butter Pickle",
   rating: 0,
   price: 28.95,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -319,7 +319,7 @@ let data = [{
   name: "Amish Wedding Foods - Wide Noodles",
   rating: 0,
   price: 16.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -328,7 +328,7 @@ let data = [{
   name: "Wanda Brunstetters Friends Christmas Cookbook",
   rating: 0,
   price: 15.97,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -337,7 +337,7 @@ let data = [{
   name: "Amish Country Popcorn Butter",
   rating: 0,
   price: 9.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -355,7 +355,7 @@ let data = [{
   name: "Sweet Onion Relish Jars",
   rating: 0,
   price: 17.94,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -373,7 +373,7 @@ let data = [{
   name: "Amish Wedding Foods - Parsley Noodles",
   rating: 0,
   price: 21.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -391,7 +391,7 @@ let data = [{
   name: "Middle East Sweets",
   rating: 0,
   price: 34.95,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -418,7 +418,7 @@ let data = [{
   name: "Amish Made Traffic Jam",
   rating: 0,
   price: 16.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -445,7 +445,7 @@ let data = [{
   name: "Amish Country Butter Salt",
   rating: 0,
   price: 14.99,
-  prime: false,
+  prime: true,
   category_id: 2
 },
 {
@@ -730,10 +730,10 @@ let data = [{
 {
   id: 82,
   image: ["https://amishon.s3.us-east-2.amazonaws.com/PicturesForFEC/82_1.jpg", "https://amishon.s3.us-east-2.amazonaws.com/PicturesForFEC/82_2.jpg", "https://amishon.s3.us-east-2.amazonaws.com/PicturesForFEC/82_3.jpg", "https://amishon.s3.us-east-2.amazonaws.com/PicturesForFEC/82_4.jpg", "https://amishon.s3.us-east-2.amazonaws.com/PicturesForFEC/82_5.jpg"],
-  name: "DE Spider Prank Scare Box，Wooden Surprise Box，Handmade Fun Practical Surprise Joke Boxes ,Gags & Practical Joke Toys Halloween",
+  name: "DE Spider Prank Scare Box，Wooden Surprise Box，Handmade Fun Practical Surprise Joke Boxes, Gags & Practical Joke Toys...",
   rating: 0,
   price: 10.49,
-  prime: false,
+  prime: true,
   category_id: 4
 },
 {
@@ -742,7 +742,7 @@ let data = [{
   name: "Amish-Made Wooden 8\" Toy Train Play Set, Painted",
   rating: 0,
   price: 16.99,
-  prime: false,
+  prime: true,
   category_id: 4
 },
 {
@@ -841,7 +841,7 @@ let data = [{
   name: "Skeleteen Corn Pipe Costume Accessory - Fake Toy Prop Pipe Accessories - 1 Piece",
   rating: 0,
   price: 6.99,
-  prime: false,
+  prime: true,
   category_id: 4
 },
 {
@@ -850,7 +850,7 @@ let data = [{
   name: "Jacobson Hat Company Child's Cocoa Straw Cowboy",
   rating: 0,
   price: 13.49,
-  prime: false,
+  prime: true,
   category_id: 4
 },
 {
@@ -874,7 +874,7 @@ let data = [{
 {
   id: 98,
   image: ["https://amishon.s3.us-east-2.amazonaws.com/PicturesForFEC/98_1.jpg"],
-  name: "Berlin Flyer Ride Sport Wagon for Kids, All Terrain - Amish Made In the USA - Huge No-Flat Tires - No-Pinch Handle & No-Tip Steering, 300 lb Limit - F410-SS Wagon",
+  name: "Berlin Flyer Ride Sport Wagon for Kids, All Terrain - Amish Made In the USA - Huge No-Flat Tires - No-Pinch Handle & No-Tip...",
   rating: 0,
   price: 165.25,
   prime: false,

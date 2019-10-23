@@ -23,9 +23,7 @@
 }
 .nameContainer {
   width: 160px;
-  overflow: hidden;
-  white-space: normal;
-  text-overflow: ellipsis
+  max-height: 76px;
 }
 .rating {
   margin: 0;
@@ -47,12 +45,21 @@
 .itemContainer {
   display: flex;
   flex-direction: row;
-  width: 100%
+  overflow: visible;
+  width: 97%
 }
 .parentContainer {
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
+  justify-content: space-around
+}
+.carouselTitle {
+  color: #C60;
+  font-size: 16px;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-family: verdana,arial,helvetica,sans-serif;
 }
 .fa-star, .fa-star-o {
   color: orange;
@@ -81,33 +88,50 @@
   height: 274px;
   width: 37px
 }
+.btnLeft {
+  margin-left: 30px
+}
+.btnRight {
+  margin-right: 30px
+}
 .fa-angle-left {
   font-size: 20px
 }
 .fa-angle-right {
   font-size: 20px
 }
-.galleryImg {
+.galleryImgContainer {
   height: 40px;
   width: 40px;
   border: 1px solid black;
-  background: #e7e9ec;
-  border-radius: 2px
+  /* background: #e7e9ec; */
+  border-radius: 2px;
+  text-align: center;
+  margin: 4px
 }
-.galleryImg:hover {
+.galleryImgContainer:hover {
   box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+  border: 1px solid rgba(66, 39, 12, 0.5);
+  cursor: pointer
+}
+.galleryImg {
+  max-height: 40px;
+  max-width: 40px;
   cursor: pointer
 }
 .imgsContainer {
   display: flex;
   flex-direction: column;
   width: 40px;
-  margin-right: 4px
+  margin-right: 4px;
 }
 .currentImgContainer {
-  width: 396px;
-  height: 396px;
-  text-align: center
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin: 8px;
+  justify-content: center;
+  align-items: center;
 }
 .currentImg {
   margin-top: 0;
