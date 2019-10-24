@@ -110,8 +110,8 @@
   margin: 4px
 }
 .j-galleryImgContainer:hover {
-  box-shadow: 0 0 3px 2px rgba(228,121,17,.j-5);
-  border: 1px solid rgba(66, 39, 12, 0.j-5);
+  box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+  border: 1px solid rgba(66, 39, 12, 0.5);
   cursor: pointer
 }
 .j-galleryImg {
@@ -127,7 +127,7 @@
 }
 .j-currentImgContainer {
   display: flex;
-  width: 36.j-5%;
+  width: 36.5%;
   margin: 8px;
   justify-content: center;
   align-items: center;
