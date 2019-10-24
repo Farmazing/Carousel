@@ -45,7 +45,7 @@ class ImageViewer extends React.Component {
       }
     }
 
-    axios.get('http://ec2-18-191-245-73.us-east-2.compute.amazonaws.com/carousel/images', data)
+    axios.get('http://ec2-18-191-245-73.us-east-2.compute.amazonaws.com/images', data)
       .then((res) => {
         this.setState({
           images: res.data[0].image
