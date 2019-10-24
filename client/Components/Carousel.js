@@ -10,7 +10,7 @@ class Carousel extends React.Component {
     this.state = {
       data: [],
       currentPage: itemsNumber,
-      currentProduct: 1
+      currentProduct: 80
     }
     this.getProducts = this.getProducts.bind(this);
     this.pageRight = this.pageRight.bind(this);
@@ -48,7 +48,7 @@ class Carousel extends React.Component {
         id: this.state.currentProduct
       }
     }
-    axios.get('/carousel', data)
+    axios.get('http://ec2-18-191-245-73.us-east-2.compute.amazonaws.com/carousel', data)
       .then((res) => {
         this.setState({
           data: res.data
@@ -85,14 +85,14 @@ class Carousel extends React.Component {
       <>
         <hr></hr>
         <div>
-          <h2 className="carouselTitle">Products related to this item</h2>
+          <h2 className="j-carouselTitle">Products related to this item</h2>
         </div>
-        <div className="parentContainer">
-          <hr className="lines" />
-          <div className="btnLeft">
-            <button onClick={this.pageLeft} className="nav-btn left"> <i className="fa fa-angle-left" aria-hidden="true"></i> </button>
+        <div className="j-parentContainer">
+          <hr className="j-lines" />
+          <div className="j-btnLeft">
+            <button onClick={this.pageLeft} className="j-nav-btn left"> <i className="fa fa-angle-left" aria-hidden="true"></i> </button>
           </div>
-          <div className="itemContainer">
+          <div className="j-itemContainer">
             {this.state.data.map((product, i) => {
               if (i < this.state.currentPage && i >= this.state.currentPage - itemsNumber) {
                 return (
@@ -101,8 +101,8 @@ class Carousel extends React.Component {
               }
             })}
           </div>
-          <div className="btnRight">
-            <button onClick={this.pageRight} className="nav-btn right"> <i className="fa fa-angle-right" aria-hidden="true"></i> </button>
+          <div className="j-btnRight">
+            <button onClick={this.pageRight} className="j-nav-btn right"> <i className="fa fa-angle-right" aria-hidden="true"></i> </button>
           </div>
         </div>
       </>

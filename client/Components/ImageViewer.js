@@ -59,14 +59,14 @@ class ImageViewer extends React.Component {
 
   render() {
     return (
-      <div className="imgGallery">
-        <div className="imgsContainer">
+      <div className="j-imgGallery">
+        <div className="j-imgsContainer">
           {this.state.images.map((image, i) => {
             return <Image key={i} select={this.mouseOver} image={image} />
           })}
         </div>
-        <div className="currentImgContainer">
-          <img className="currentImg" src={this.state.currentImage ? this.state.currentImage : this.state.images[0]}></img>
+        <div className="j-currentImgContainer">
+          <img className="j-currentImg" src={this.state.currentImage ? this.state.currentImage : this.state.images[0]}></img>
         </div>
       </div>
     )

@@ -1,4 +1,4 @@
-.imgs {
+.j-imgs {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -6,11 +6,11 @@
   max-width: 160px;
   cursor: pointer;
 }
-.imgContainer {
+.j-imgContainer {
   width: 160px;
   text-align: center
 }
-.names {
+.j-names {
   margin-top: 0;
   padding: 0;
   width: 160px;
@@ -18,59 +18,59 @@
   font-size: 13px;
   cursor: pointer;
 }
-.names:hover{
+.j-names:hover{
   text-decoration: underline;
 }
-.nameContainer {
+.j-nameContainer {
   width: 160px;
   max-height: 76px;
 }
-.rating {
+.j-rating {
   margin: 0;
   padding: 0;
   cursor: pointer
 }
-.priceContainer {
+.j-priceContainer {
   display: flex
 }
-.price {
+.j-price {
   margin: 0;
   padding: 0;
   color: #B12704;
   font-size: 13px
 }
-.primeLogo {
+.j-primeLogo {
   width: 42px;
 }
-.itemContainer {
+.j-itemContainer {
   display: flex;
   flex-direction: row;
   overflow: visible;
   width: 97%
 }
-.parentContainer {
+.j-parentContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around
 }
-.carouselTitle {
+.j-carouselTitle {
   color: #C60;
   font-size: 16px;
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-family: verdana,arial,helvetica,sans-serif;
 }
-.fa-star, .fa-star-o {
+.fa-star, .fa-star-o, .fa-star-half-o {
   color: orange;
   height: 18px
 }
-.item {
+.j-item {
   margin: 0px 0px 0px 15px;
   width: 160px;
   height: 274px;
 }
-.nav-btn {
+.j-nav-btn {
   position: relative;
   background: #e7e9ec;
   border-radius: 3px;
@@ -84,14 +84,14 @@
   width: 30px;
   height: 33px;
 }
-.buttonContainer {
+.j-buttonContainer {
   height: 274px;
   width: 37px
 }
-.btnLeft {
+.j-btnLeft {
   margin-left: 30px
 }
-.btnRight {
+.j-btnRight {
   margin-right: 30px
 }
 .fa-angle-left {
@@ -100,7 +100,7 @@
 .fa-angle-right {
   font-size: 20px
 }
-.galleryImgContainer {
+.j-galleryImgContainer {
   height: 40px;
   width: 40px;
   border: 1px solid black;
@@ -109,31 +109,34 @@
   text-align: center;
   margin: 4px
 }
-.galleryImgContainer:hover {
-  box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
-  border: 1px solid rgba(66, 39, 12, 0.5);
+.j-galleryImgContainer:hover {
+  box-shadow: 0 0 3px 2px rgba(228,121,17,.j-5);
+  border: 1px solid rgba(66, 39, 12, 0.j-5);
   cursor: pointer
 }
-.galleryImg {
+.j-galleryImg {
   max-height: 40px;
   max-width: 40px;
   cursor: pointer
 }
-.imgsContainer {
+.j-imgsContainer {
   display: flex;
   flex-direction: column;
   width: 40px;
   margin-right: 4px;
 }
-.currentImgContainer {
+.j-currentImgContainer {
   display: flex;
-  width: 400px;
-  height: 400px;
+  width: 36.j-5%;
   margin: 8px;
   justify-content: center;
   align-items: center;
 }
-.currentImg {
+.j-currentImgContainer:after {
+  content: '';
+  padding-bottom: 100%
+}
+.j-currentImg {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
@@ -141,7 +144,7 @@
   max-width: 396px;
   cursor: pointer;
 }
-.imgGallery {
+.j-imgGallery {
   display: flex;
   flex-direction: row;
 }

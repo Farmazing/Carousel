@@ -8,6 +8,7 @@ app.use(express.json());
 
 app.get('/carousel', (req, res) => {
   let id = req.query.id;
+  console.log(req);
   db.getCategory(id, (err, results) => {
     if(err) {
       console.log(err);
