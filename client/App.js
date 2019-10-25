@@ -6,3 +6,4 @@ import Carousel from './components/Carousel';
 
 ReactDOM.render(<ImageViewer />, document.getElementById('ImageGallery'));
 ReactDOM.render(<Carousel />, document.getElementById('Carousel'));
+ReactDOM.render(<Carousel />, document.getElementById('Carousel2'));
