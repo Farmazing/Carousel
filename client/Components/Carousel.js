@@ -10,7 +10,9 @@ class Carousel extends React.Component {
     this.state = {
       data: [],
       currentPage: itemsNumber,
-      currentProduct: 80
+      pageNumber: 1,
+      pageTotal: Math.ceil(25 / itemsNumber),
+      currentProduct: 1
     }
     this.getProducts = this.getProducts.bind(this);
     this.pageRight = this.pageRight.bind(this);
@@ -62,7 +64,8 @@ class Carousel extends React.Component {
   pageRight() {
     if(this.state.currentPage + itemsNumber < this.state.data.length + itemsNumber) {
       this.setState({
-        currentPage: this.state.currentPage + itemsNumber
+        currentPage: this.state.currentPage + itemsNumber,
+        pageNumber: this.state.pageNumber + 1
       })
     }
   }
@@ -70,7 +73,8 @@ class Carousel extends React.Component {
   pageLeft() {
     if (this.state.currentPage > itemsNumber) {
       this.setState({
-        currentPage: this.state.currentPage-itemsNumber
+        currentPage: this.state.currentPage-itemsNumber,
+        pageNumber: this.state.pageNumber - 1
       })
     }
   }
@@ -84,8 +88,15 @@ class Carousel extends React.Component {
     return (
       <>
         <hr></hr>
-        <div>
-          <h2 className="j-carouselTitle">Products related to this item</h2>
+        <div className="j-carouselHeader">
+          <div>
+            <h2 className="j-carouselTitle">Products related to this item</h2>
+          </div>
+          <div className="j-pageContainer">
+            <span className="j-pageCount">
+              Page {this.state.pageNumber} of {this.state.pageTotal}
+            </span>
+          </div>
         </div>
         <div className="j-parentContainer">
           <hr className="j-lines" />
@@ -105,6 +116,13 @@ class Carousel extends React.Component {
             <button onClick={this.pageRight} className="j-nav-btn right"> <i className="fa fa-angle-right" aria-hidden="true"></i> </button>
           </div>
         </div>
+        <div className="j-feedbackContainer">
+          <div>
+            <span className="j-feedback">Ad feedback </span>
+            <span className="j-textBubble"></span>
+          </div>
+        </div>
+        <hr></hr>
       </>
     )
   }
