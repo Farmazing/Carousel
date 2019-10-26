@@ -147,6 +147,7 @@
   cursor: pointer;
 }
 .j-imgGallery {
+  margin-top: 8px;
   display: flex;
   flex-direction: row;
 }
