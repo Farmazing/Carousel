@@ -123,15 +123,14 @@
   display: flex;
   flex-direction: column;
   width: 40px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin: 0px 8px 0px 8px;
   float: left
 }
 .j-currentImgContainer {
   display: flex;
-  width: 36.5%;
-  margin-left: 58px;
-  /* justify-content: center; */
+  width: 540px;
+  margin: 0px 8px 0px 8px;
+  justify-content: center;
   align-items: center;
 }
 .j-currentImgContainer:after {
@@ -147,11 +146,10 @@
   max-width: 396px;
   cursor: pointer;
 }
-/* .j-imgGallery {
+.j-imgGallery {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start
-} */
+}
 .j-carouselHeader {
   display: flex;
   flex-direction: row;
