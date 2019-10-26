@@ -39,6 +39,7 @@ class ImageViewer extends React.Component {
   }
 
   getImages () {
+
     let data = {
       params: {
         id: this.state.currentProduct
